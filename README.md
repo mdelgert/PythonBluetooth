@@ -11,7 +11,9 @@ https://github.com/DGTCentaurMods/DGTCentaurMods/issues/98
 https://stackoverflow.com/questions/34599703/rfcomm-bluetooth-permission-denied-error-raspberry-pi
 
 # Setup
-virtualenv venv
+sudo apt install python3-pip
+pip install virtualenv
+python -m virtualenv venv
 pip install pybluez2 pyautogui
 
 # Windows
