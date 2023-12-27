@@ -9,6 +9,7 @@ https://github.com/pybluez/pybluez/issues/431
 https://github.com/AnesBenmerzoug/Bluetooth_HID
 https://github.com/DGTCentaurMods/DGTCentaurMods/issues/98
 https://stackoverflow.com/questions/34599703/rfcomm-bluetooth-permission-denied-error-raspberry-pi
+https://medium.com/cemac/keep-bluetooth-discoverable-rpi-unix-bbe1c9ecbdb6
 
 # Setup
 sudo apt install python3-pip
