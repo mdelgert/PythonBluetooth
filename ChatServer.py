@@ -7,8 +7,8 @@ import socket
 
 server = socket.socket(socket.AF_BLUETOOTH, socket.SOCK_STREAM, socket.BTPROTO_RFCOMM)  # RFCOMM specific protocol
 #server.bind(("<your BT adapter MAC address>", 4))  # MAC Address and Channel 4
-#server.bind(("54:6c:eb:a1:32:44", 4))  # MAC Address and Channel 4
-server.bind(("D8:3A:DD:18:15:40", 4))  # MAC Address and Channel 4
+server.bind(("54:6c:eb:a1:32:44", 4))  # MAC Address and Channel 4
+#server.bind(("D8:3A:DD:18:15:40", 4))  # MAC Address and Channel 4
 
 server.listen(1)
 
