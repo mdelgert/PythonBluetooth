@@ -1,4 +1,14 @@
+# Using Python For Bluetooth
+https://ukbaz.github.io/howto/bluetooth_overview.html
+https://github.com/ukBaz/python-bluezero/wiki
+
 # PythonBluetooth
+https://github.com/pybluez/pybluez/tree/master
+https://github.com/hbldh/bleak/tree/develop
+https://github.com/kevincar/bless
+
+# Bluetooth Programming with Python 3
+http://blog.kevindoran.co/bluetooth-programming-with-python-3/
 
 # Links
 https://www.youtube.com/watch?v=8pMaR-WUc6U
@@ -16,6 +26,7 @@ https://raspberry-projects.com/pi/pi-operating-systems/raspbian/bluetooth/blueto
 https://raspberrypi.stackexchange.com/questions/14598/making-raspberry-pi-bluetooth-slave/19865#19865
 https://stackoverflow.com/questions/62652901/how-do-i-broadcast-bluetooth-inquiry-with-python-sockets-af-bluetooth-socket
 https://gist.github.com/scientificRat/be2bbac0769bfa04820bc73edc009bdf
+https://roboticsknowledgebase.com/wiki/networking/bluetooth-sockets/
 
 # PiKVM Bluetooth HID
 https://docs.pikvm.org/bluetooth_hid/
