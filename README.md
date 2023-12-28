@@ -12,6 +12,9 @@ https://stackoverflow.com/questions/34599703/rfcomm-bluetooth-permission-denied-
 https://medium.com/cemac/keep-bluetooth-discoverable-rpi-unix-bbe1c9ecbdb6
 https://www.cnet.com/tech/computing/how-to-setup-bluetooth-on-a-raspberry-pi-3/
 https://www.slashgear.com/1275647/raspberry-pi-4-how-to-enable-pair-bluetooth/
+https://unix.stackexchange.com/questions/205321/where-should-i-put-hciconfig-hci0-up-for-start-up
+https://raspberry-projects.com/pi/pi-operating-systems/raspbian/bluetooth/bluetooth-commands
+https://raspberrypi.stackexchange.com/questions/14598/making-raspberry-pi-bluetooth-slave/19865#19865
 
 # Pair 2 Raspberry Pis
 https://bluedot.readthedocs.io/en/latest/pairpipi.html
@@ -52,13 +55,17 @@ Name = RaspberryPi
 DiscoverableTimeout = 0
 sudo systemctl daemon-reload;
 sudo systemctl restart bluetooth.service;
-sudo nano /etc/rc.local
 
-# Example /etc/rc.local
-sudo bluetoothctl <<EOF
-power on
-discoverable on
-pairable on
-EOF
+# Bring NT online
+sudo hciconfig -a
+sudo hciconfig hci0 up
+sudo bluetoothctl
+agent on
 
-# Pair 2 Raspberry Pis
+# Example /etc/rc.local does not work use bluetooth_discoverable.sh
+# sudo bluetoothctl <<EOF
+# power on
+# discoverable on
+# pairable on
+# EOF
+# sudo hciconfig hci0 piscan &
