@@ -1,3 +1,10 @@
+# Make Linux System Discoverable by Remote Bluetooth Devices
+https://www.instructables.com/Turn-the-Raspberry-Pi-into-a-Bluetooth-Device/
+https://www.instructables.com/Make-Raspberry-Pi-Discoverable-By-Remote-Bluetooth/
+
+# Using Raspberry Pi 3 On-Board Bluetooth for Communication
+https://www.electronicwings.com/raspberry-pi/using-raspberry-pi-3-on-board-bluetooth-for-communication
+
 # Using Python For Bluetooth
 https://ukbaz.github.io/howto/bluetooth_overview.html
 https://github.com/ukBaz/python-bluezero/wiki
