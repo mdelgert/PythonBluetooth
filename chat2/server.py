@@ -17,7 +17,7 @@ client, addr = server.accept()
 print(f"Accepted connection from {addr}")
 
 try:
-    for i in range(1000):
+    for i in range(10000):
             message = f"ID: {i}"
             print(f"Send: {message}")
             client.send(message.encode('utf-8'))
