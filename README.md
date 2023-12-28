@@ -14,6 +14,16 @@ https://www.slashgear.com/1275647/raspberry-pi-4-how-to-enable-pair-bluetooth/
 https://unix.stackexchange.com/questions/205321/where-should-i-put-hciconfig-hci0-up-for-start-up
 https://raspberry-projects.com/pi/pi-operating-systems/raspbian/bluetooth/bluetooth-commands
 https://raspberrypi.stackexchange.com/questions/14598/making-raspberry-pi-bluetooth-slave/19865#19865
+https://stackoverflow.com/questions/62652901/how-do-i-broadcast-bluetooth-inquiry-with-python-sockets-af-bluetooth-socket
+https://gist.github.com/scientificRat/be2bbac0769bfa04820bc73edc009bdf
+
+# PiKVM Bluetooth HID
+https://docs.pikvm.org/bluetooth_hid/
+https://github.com/pikvm/kvmd/tree/master/hid
+
+# Simple bluetooth keyboard with Raspberry PI
+https://tailcall.net/posts/bluetooth-keyboard/
+https://github.com/msm-code/RandomCodes/tree/master/bluetooth-keyboard
 
 # Pair 2 Raspberry Pis
 https://bluedot.readthedocs.io/en/latest/pairpipi.html
@@ -39,7 +49,6 @@ hciconfig
 bluetoothd -v
 
 # RPI BT always on discoverable
-sudo apt install bluetooth bluez bluez-tools
 sudo nano /etc/bluetooth/main.conf
 sudo systemctl daemon-reload
 sudo systemctl restart bluetooth.service
