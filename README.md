@@ -10,6 +10,11 @@ https://github.com/AnesBenmerzoug/Bluetooth_HID
 https://github.com/DGTCentaurMods/DGTCentaurMods/issues/98
 https://stackoverflow.com/questions/34599703/rfcomm-bluetooth-permission-denied-error-raspberry-pi
 https://medium.com/cemac/keep-bluetooth-discoverable-rpi-unix-bbe1c9ecbdb6
+https://www.cnet.com/tech/computing/how-to-setup-bluetooth-on-a-raspberry-pi-3/
+https://www.slashgear.com/1275647/raspberry-pi-4-how-to-enable-pair-bluetooth/
+
+# Pair 2 Raspberry Pis
+https://bluedot.readthedocs.io/en/latest/pairpipi.html
 
 # Setup
 sudo apt install python3-pip
@@ -34,14 +39,26 @@ bluetoothd -v
 # Setup BT
 bluetoothctl
 power on
-scan on
 discoverable on
+pairable on
+
+# Scan for devices
+scan on
 
 # RPI BT always on discoverable
 sudo apt install bluetooth bluez bluez-tools
 sudo nano /etc/bluetooth/main.conf
 Name = RaspberryPi
-sudo nano /lib/systemd/system/bluetooth.service
-ExecStart=/usr/lib/bluetooth/bluetoothd -C
-sudo systemctl restart bluetooth
-sudo reboot
+DiscoverableTimeout = 0
+sudo systemctl daemon-reload;
+sudo systemctl restart bluetooth.service;
+sudo nano /etc/rc.local
+
+# Example /etc/rc.local
+sudo bluetoothctl <<EOF
+power on
+discoverable on
+pairable on
+EOF
+
+# Pair 2 Raspberry Pis
