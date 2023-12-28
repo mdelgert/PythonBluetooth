@@ -1,7 +1,6 @@
 # PythonBluetooth
 
 # Links
-
 https://www.youtube.com/watch?v=8pMaR-WUc6U
 https://github.com/NeuralNine/youtube-tutorials
 https://github.com/NeuralNine/youtube-tutorials/tree/main/Bluetooth%20Chat
@@ -39,33 +38,20 @@ systemctl status bluetooth
 hciconfig
 bluetoothd -v
 
-# Setup BT
-bluetoothctl
-power on
-discoverable on
-pairable on
-
-# Scan for devices
-scan on
-
 # RPI BT always on discoverable
 sudo apt install bluetooth bluez bluez-tools
 sudo nano /etc/bluetooth/main.conf
-Name = RaspberryPi
-DiscoverableTimeout = 0
-sudo systemctl daemon-reload;
-sudo systemctl restart bluetooth.service;
+sudo systemctl daemon-reload
+sudo systemctl restart bluetooth.service
 
-# Bring NT online
-sudo hciconfig -a
+# Bring BT online manually
 sudo hciconfig hci0 up
+sudo hciconfig -a
 sudo bluetoothctl
+power on
+discoverable on
+pairable on
 agent on
 
-# Example /etc/rc.local does not work use bluetooth_discoverable.sh
-# sudo bluetoothctl <<EOF
-# power on
-# discoverable on
-# pairable on
-# EOF
-# sudo hciconfig hci0 piscan &
+# Scan for devices
+scan on
