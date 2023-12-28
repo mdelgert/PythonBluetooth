@@ -21,9 +21,14 @@ https://gist.github.com/scientificRat/be2bbac0769bfa04820bc73edc009bdf
 https://docs.pikvm.org/bluetooth_hid/
 https://github.com/pikvm/kvmd/tree/master/hid
 
+# Mouse keyboard for Raspberry Pi Pico
+https://github.com/argilo/pico-jiggler
+https://github.com/stjeong/rasp_vusb
+
 # Simple bluetooth keyboard with Raspberry PI
 https://tailcall.net/posts/bluetooth-keyboard/
 https://github.com/msm-code/RandomCodes/tree/master/bluetooth-keyboard
+https://gist.github.com/ukBaz/a47e71e7b87fbc851b27cde7d1c0fcf0
 
 # Pair 2 Raspberry Pis
 https://bluedot.readthedocs.io/en/latest/pairpipi.html
