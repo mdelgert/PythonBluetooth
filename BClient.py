@@ -1,6 +1,8 @@
 import bluetooth
 
 def start_client():
+
+    # hciconfig to get address
     server_address = "D8:3A:DD:23:71:88"  # Replace with the server's Bluetooth address
     port = 1
 
