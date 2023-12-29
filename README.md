@@ -32,6 +32,9 @@ https://roboticsknowledgebase.com/wiki/networking/bluetooth-sockets/
 https://docs.pikvm.org/bluetooth_hid/
 https://github.com/pikvm/kvmd/tree/master/hid
 
+# Make a Keyboard Jiggler using a Raspberry Pi Zero W
+https://davesteele.github.io/raspberrypi/2021/04/18/keyboard-jiggler/
+
 # Mouse keyboard for Raspberry Pi Pico
 https://github.com/argilo/pico-jiggler
 https://github.com/stjeong/rasp_vusb
