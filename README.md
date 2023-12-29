@@ -2,6 +2,9 @@
 https://www.instructables.com/Turn-the-Raspberry-Pi-into-a-Bluetooth-Device/
 https://www.instructables.com/Make-Raspberry-Pi-Discoverable-By-Remote-Bluetooth/
 
+# Using a Raspberry Pi as a Bluetooth speaker with PipeWire
+https://www.collabora.com/news-and-blog/blog/2022/09/02/using-a-raspberry-pi-as-a-bluetooth-speaker-with-pipewire-wireplumber/
+
 # Using Raspberry Pi 3 On-Board Bluetooth for Communication
 https://www.electronicwings.com/raspberry-pi/using-raspberry-pi-3-on-board-bluetooth-for-communication
 
