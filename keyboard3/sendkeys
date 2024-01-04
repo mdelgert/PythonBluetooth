@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+echo "$@" | /home/mdelgert/pizero-usb-hid-keyboard/hid-gadget-test /dev/hidg0 keyboard
